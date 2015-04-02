@@ -29,6 +29,8 @@ for line in table_2012_65:
 	i += 1
 	if i>22:
 		break
+
+#Make populations a percentage
 for rr in range(0,len(Edu25Data)):
 	for cc in range(0,len(Edu25Data[rr])):
 		if cc>0:
