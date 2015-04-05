@@ -17,6 +17,12 @@ pctHisp=[]
 pctWhite=[]
 schoolGrade=[]
 income60kPlus=[]
+pctBlack=[]
+pctAsian=[]
+pctSingle=[]
+pctFreeMeal=[]
+pctAmind=[]
+enrollement=[]
 
 
 for ii in data2012:
@@ -24,19 +30,103 @@ for ii in data2012:
 	pctHisp.append(float(ii['PCT_hisp']))
 	pctWhite.append(float(ii['PCT_White']))
 	income60kPlus.append(float(ii['PCT_More_than_INCOME_60000']))
+	pctBlack.append(float(ii['PCT_Black']))
+	pctAsian.append(float(ii['PCT_Asian']))
+	pctFreeMeal.append(float(ii['PCT_FREE_MEAL']))
+	pctSingle.append(float(ii['PCT_Single_Family']))
+	pctAmind.append(float(ii['PCT_AmInd']))
+	enrollement.append(float(ii['Enrol_TOT']))
 
-bestfit = np.polyfit(income60kPlus, schoolGrade, 1)
-xs = [0, 1.0]
+bestfit = np.polyfit(enrollement, schoolGrade, 1)
+xs = [0, max(enrollement)]
 ys = [(xs[0]*bestfit[0]+bestfit[1]),(xs[1]*bestfit[0]+bestfit[1])]
 # print bestfit
-line0, =plt.plot(income60kPlus, schoolGrade, 'ro', ms=3.0)
+line0, =plt.plot(enrollement, schoolGrade, 'ro', ms=3.0)
 line1, =plt.plot(xs,ys,'b-', lw=3)
 plt.ylabel('School Grade')
 plt.ylim([0,14])
-plt.xlabel('Percent of population (%)')
-plt.title('Income vs School Grade')
-plt.legend([line0, line1], ['Income $60k+', 'Bestfit'], loc=2)
+plt.xlabel('Total Enrolled')
+plt.title('Enrollement vs School Grade')
+plt.legend([line0, line1], ['Enrollement', 'Bestfit'])
 plt.show()
+
+# bestfit = np.polyfit(pctAmind, schoolGrade, 1)
+# xs = [0, 1.0]
+# ys = [(xs[0]*bestfit[0]+bestfit[1]),(xs[1]*bestfit[0]+bestfit[1])]
+# # print bestfit
+# line0, =plt.plot(pctAmind, schoolGrade, 'ro', ms=3.0)
+# line1, =plt.plot(xs,ys,'b-', lw=3)
+# plt.ylabel('School Grade')
+# plt.ylim([0,14])
+# plt.xlabel('Percent of population (%)')
+# plt.title('Race vs School Grade')
+# plt.legend([line0, line1], ['Pct American Indian', 'Bestfit'])
+# plt.show()
+
+# bestfit = np.polyfit(pctBlack, schoolGrade, 1)
+# xs = [0, 1.0]
+# ys = [(xs[0]*bestfit[0]+bestfit[1]),(xs[1]*bestfit[0]+bestfit[1])]
+# # print bestfit
+# line0, =plt.plot(pctBlack, schoolGrade, 'ro', ms=3.0)
+# line1, =plt.plot(xs,ys,'b-', lw=3)
+# plt.ylabel('School Grade')
+# plt.ylim([0,14])
+# plt.xlabel('Percent of population (%)')
+# plt.title('Race vs School Grade')
+# plt.legend([line0, line1], ['Pct Black', 'Bestfit'])
+# plt.show()
+
+# bestfit = np.polyfit(pctAsian, schoolGrade, 1)
+# xs = [0, 1.0]
+# ys = [(xs[0]*bestfit[0]+bestfit[1]),(xs[1]*bestfit[0]+bestfit[1])]
+# # print bestfit
+# line0, =plt.plot(pctAsian, schoolGrade, 'ro', ms=3.0)
+# line1, =plt.plot(xs,ys,'b-', lw=3)
+# plt.ylabel('School Grade')
+# plt.ylim([0,14])
+# plt.xlabel('Percent of population (%)')
+# plt.title('Race vs School Grade')
+# plt.legend([line0, line1], ['Pct Asian', 'Bestfit'])
+# plt.show()
+
+# bestfit = np.polyfit(pctSingle, schoolGrade, 1)
+# xs = [0, 1.0]
+# ys = [(xs[0]*bestfit[0]+bestfit[1]),(xs[1]*bestfit[0]+bestfit[1])]
+# # print bestfit
+# line0, =plt.plot(pctSingle, schoolGrade, 'ro', ms=3.0)
+# line1, =plt.plot(xs,ys,'b-', lw=3)
+# plt.ylabel('School Grade')
+# plt.ylim([0,14])
+# plt.xlabel('Percent of population (%)')
+# plt.title('Single Family vs School Grade')
+# plt.legend([line0, line1], ['Pct Single Family', 'Bestfit'])
+# plt.show()
+
+# bestfit = np.polyfit(pctFreeMeal, schoolGrade, 1)
+# xs = [0, 1.0]
+# ys = [(xs[0]*bestfit[0]+bestfit[1]),(xs[1]*bestfit[0]+bestfit[1])]
+# # print bestfit
+# line0, =plt.plot(pctFreeMeal, schoolGrade, 'ro', ms=3.0)
+# line1, =plt.plot(xs,ys,'b-', lw=3)
+# plt.ylabel('School Grade')
+# plt.ylim([0,14])
+# plt.xlabel('Percent of population (%)')
+# plt.title('Free Meal vs School Grade')
+# plt.legend([line0, line1], ['Pct Free Meal', 'Bestfit'])
+# plt.show()
+
+# bestfit = np.polyfit(income60kPlus, schoolGrade, 1)
+# xs = [0, 1.0]
+# ys = [(xs[0]*bestfit[0]+bestfit[1]),(xs[1]*bestfit[0]+bestfit[1])]
+# # print bestfit
+# line0, =plt.plot(income60kPlus, schoolGrade, 'ro', ms=3.0)
+# line1, =plt.plot(xs,ys,'b-', lw=3)
+# plt.ylabel('School Grade')
+# plt.ylim([0,14])
+# plt.xlabel('Percent of population (%)')
+# plt.title('Income vs School Grade')
+# plt.legend([line0, line1], ['Income $60k+', 'Bestfit'], loc=2)
+# plt.show()
 
 
 # bestfit = np.polyfit(pctHisp, schoolGrade, 1)
