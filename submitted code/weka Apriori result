@@ -1,0 +1,532 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -I -N 2000 -T 1 -C 2.0 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     5_q_processed_2012_O_Missing_Filling _Dimension_Reduction.copy-weka.filters.unsupervised.attribute.Remove-R1,3-12,19-weka.filters.unsupervised.attribute.Discretize-F-B4-M-1.0-Rfirst-last-weka.filters.unsupervised.attribute.Remove-R12
+Instances:    1812
+Attributes:   11
+              School_Grade
+              PCT_AmInd
+              PCT_Asian
+              PCT_Black
+              PCT_hisp
+              PCT_White
+              PCT_PI
+              PCT_FREE_MEAL
+              PCT_Single_Family
+              PCT_More_than_INCOME_60000
+              EDU_Population35to44years_Bachelorsdegreeorhigher
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.1 (181 instances)
+Minimum metric <lift>: 2
+Number of cycles performed: 18
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 44
+
+Large Itemsets L(1):
+School_Grade='(-inf-5.5]' 437
+School_Grade='(5.5-6.5]' 534
+School_Grade='(6.5-9.5]' 548
+School_Grade='(9.5-inf)' 293
+PCT_AmInd='(-inf-0.001889]' 455
+PCT_AmInd='(0.001889-0.005421]' 451
+PCT_AmInd='(0.005421-0.009688]' 453
+PCT_AmInd='(0.009688-inf)' 453
+PCT_Asian='(-inf-0.004892]' 453
+PCT_Asian='(0.004892-0.015316]' 453
+PCT_Asian='(0.015316-0.035046]' 453
+PCT_Asian='(0.035046-inf)' 453
+PCT_Black='(-inf-0.004035]' 453
+PCT_Black='(0.004035-0.011741]' 453
+PCT_Black='(0.011741-0.031654]' 453
+PCT_Black='(0.031654-inf)' 453
+PCT_hisp='(-inf-0.118039]' 453
+PCT_hisp='(0.118039-0.217836]' 453
+PCT_hisp='(0.217836-0.458226]' 453
+PCT_hisp='(0.458226-inf)' 453
+PCT_White='(-inf-0.383592]' 454
+PCT_White='(0.383592-0.669973]' 453
+PCT_White='(0.669973-0.802504]' 453
+PCT_White='(0.802504-inf)' 452
+PCT_PI='(-inf-0.000242]' 1039
+PCT_PI='(0.000242-0.002293]' 256
+PCT_PI='(0.002293-0.004358]' 259
+PCT_PI='(0.004358-inf)' 258
+PCT_FREE_MEAL='(-inf-0.20415]' 452
+PCT_FREE_MEAL='(0.20415-0.42205]' 453
+PCT_FREE_MEAL='(0.42205-0.6535]' 454
+PCT_FREE_MEAL='(0.6535-inf)' 453
+PCT_Single_Family='(-inf-0.170762]' 446
+PCT_Single_Family='(0.170762-0.252067]' 456
+PCT_Single_Family='(0.252067-0.352997]' 455
+PCT_Single_Family='(0.352997-inf)' 455
+PCT_More_than_INCOME_60000='(-inf-0.40602]' 461
+PCT_More_than_INCOME_60000='(0.40602-0.567065]' 456
+PCT_More_than_INCOME_60000='(0.567065-0.708078]' 448
+PCT_More_than_INCOME_60000='(0.708078-inf)' 447
+EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 452
+EDU_Population35to44years_Bachelorsdegreeorhigher='(0.1905-0.3345]' 462
+EDU_Population35to44years_Bachelorsdegreeorhigher='(0.3345-0.515]' 455
+EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 443
+
+Size of set of large itemsets L(2): 101
+
+Large Itemsets L(2):
+School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' 223
+School_Grade='(-inf-5.5]' PCT_White='(-inf-0.383592]' 228
+School_Grade='(-inf-5.5]' PCT_PI='(-inf-0.000242]' 263
+School_Grade='(-inf-5.5]' PCT_FREE_MEAL='(0.6535-inf)' 222
+School_Grade='(-inf-5.5]' PCT_Single_Family='(0.352997-inf)' 191
+School_Grade='(-inf-5.5]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 192
+School_Grade='(5.5-6.5]' PCT_hisp='(0.217836-0.458226]' 185
+School_Grade='(5.5-6.5]' PCT_White='(0.383592-0.669973]' 182
+School_Grade='(5.5-6.5]' PCT_PI='(-inf-0.000242]' 307
+School_Grade='(6.5-9.5]' PCT_hisp='(0.118039-0.217836]' 202
+School_Grade='(6.5-9.5]' PCT_White='(0.669973-0.802504]' 203
+School_Grade='(6.5-9.5]' PCT_PI='(-inf-0.000242]' 286
+School_Grade='(6.5-9.5]' PCT_FREE_MEAL='(-inf-0.20415]' 192
+School_Grade='(6.5-9.5]' PCT_Single_Family='(-inf-0.170762]' 183
+School_Grade='(6.5-9.5]' PCT_More_than_INCOME_60000='(0.708078-inf)' 201
+School_Grade='(9.5-inf)' PCT_PI='(-inf-0.000242]' 183
+PCT_AmInd='(-inf-0.001889]' PCT_Black='(-inf-0.004035]' 190
+PCT_AmInd='(-inf-0.001889]' PCT_White='(0.802504-inf)' 185
+PCT_AmInd='(-inf-0.001889]' PCT_PI='(-inf-0.000242]' 350
+PCT_AmInd='(0.001889-0.005421]' PCT_PI='(-inf-0.000242]' 222
+PCT_AmInd='(0.005421-0.009688]' PCT_PI='(-inf-0.000242]' 198
+PCT_AmInd='(0.009688-inf)' PCT_PI='(-inf-0.000242]' 269
+PCT_Asian='(-inf-0.004892]' PCT_Black='(-inf-0.004035]' 213
+PCT_Asian='(-inf-0.004892]' PCT_PI='(-inf-0.000242]' 356
+PCT_Asian='(-inf-0.004892]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 181
+PCT_Asian='(-inf-0.004892]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 189
+PCT_Asian='(0.004892-0.015316]' PCT_PI='(-inf-0.000242]' 259
+PCT_Asian='(0.015316-0.035046]' PCT_PI='(-inf-0.000242]' 214
+PCT_Asian='(0.035046-inf)' PCT_PI='(-inf-0.000242]' 210
+PCT_Asian='(0.035046-inf)' PCT_FREE_MEAL='(-inf-0.20415]' 207
+PCT_Asian='(0.035046-inf)' PCT_More_than_INCOME_60000='(0.708078-inf)' 199
+PCT_Black='(-inf-0.004035]' PCT_White='(0.802504-inf)' 208
+PCT_Black='(-inf-0.004035]' PCT_PI='(-inf-0.000242]' 351
+PCT_Black='(0.004035-0.011741]' PCT_PI='(-inf-0.000242]' 276
+PCT_Black='(0.011741-0.031654]' PCT_PI='(-inf-0.000242]' 256
+PCT_Black='(0.031654-inf)' PCT_White='(-inf-0.383592]' 204
+PCT_Black='(0.031654-inf)' PCT_FREE_MEAL='(0.6535-inf)' 184
+PCT_Black='(0.031654-inf)' PCT_Single_Family='(0.352997-inf)' 189
+PCT_hisp='(-inf-0.118039]' PCT_White='(0.802504-inf)' 355
+PCT_hisp='(-inf-0.118039]' PCT_PI='(-inf-0.000242]' 301
+PCT_hisp='(-inf-0.118039]' PCT_FREE_MEAL='(-inf-0.20415]' 273
+PCT_hisp='(-inf-0.118039]' PCT_Single_Family='(-inf-0.170762]' 204
+PCT_hisp='(-inf-0.118039]' PCT_More_than_INCOME_60000='(0.708078-inf)' 213
+PCT_hisp='(-inf-0.118039]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 202
+PCT_hisp='(0.118039-0.217836]' PCT_White='(0.669973-0.802504]' 279
+PCT_hisp='(0.118039-0.217836]' PCT_PI='(-inf-0.000242]' 229
+PCT_hisp='(0.118039-0.217836]' PCT_FREE_MEAL='(0.20415-0.42205]' 189
+PCT_hisp='(0.217836-0.458226]' PCT_White='(0.383592-0.669973]' 294
+PCT_hisp='(0.217836-0.458226]' PCT_PI='(-inf-0.000242]' 209
+PCT_hisp='(0.217836-0.458226]' PCT_FREE_MEAL='(0.42205-0.6535]' 219
+PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 380
+PCT_hisp='(0.458226-inf)' PCT_PI='(-inf-0.000242]' 300
+PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 350
+PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' 246
+PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 262
+PCT_hisp='(0.458226-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 208
+PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' 274
+PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 366
+PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 273
+PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 270
+PCT_White='(-inf-0.383592]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 201
+PCT_White='(0.383592-0.669973]' PCT_PI='(-inf-0.000242]' 201
+PCT_White='(0.383592-0.669973]' PCT_FREE_MEAL='(0.42205-0.6535]' 190
+PCT_White='(0.669973-0.802504]' PCT_PI='(-inf-0.000242]' 249
+PCT_White='(0.669973-0.802504]' PCT_FREE_MEAL='(-inf-0.20415]' 188
+PCT_White='(0.669973-0.802504]' PCT_More_than_INCOME_60000='(0.708078-inf)' 189
+PCT_White='(0.802504-inf)' PCT_PI='(-inf-0.000242]' 315
+PCT_White='(0.802504-inf)' PCT_FREE_MEAL='(-inf-0.20415]' 216
+PCT_White='(0.802504-inf)' PCT_Single_Family='(-inf-0.170762]' 201
+PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(-inf-0.20415]' 239
+PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.20415-0.42205]' 226
+PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.42205-0.6535]' 282
+PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 292
+PCT_PI='(-inf-0.000242]' PCT_Single_Family='(-inf-0.170762]' 261
+PCT_PI='(-inf-0.000242]' PCT_Single_Family='(0.170762-0.252067]' 232
+PCT_PI='(-inf-0.000242]' PCT_Single_Family='(0.252067-0.352997]' 265
+PCT_PI='(-inf-0.000242]' PCT_Single_Family='(0.352997-inf)' 281
+PCT_PI='(-inf-0.000242]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 288
+PCT_PI='(-inf-0.000242]' PCT_More_than_INCOME_60000='(0.40602-0.567065]' 305
+PCT_PI='(-inf-0.000242]' PCT_More_than_INCOME_60000='(0.567065-0.708078]' 208
+PCT_PI='(-inf-0.000242]' PCT_More_than_INCOME_60000='(0.708078-inf)' 238
+PCT_PI='(-inf-0.000242]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 294
+PCT_PI='(-inf-0.000242]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.1905-0.3345]' 266
+PCT_PI='(-inf-0.000242]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.3345-0.515]' 244
+PCT_PI='(-inf-0.000242]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 235
+PCT_FREE_MEAL='(-inf-0.20415]' PCT_Single_Family='(-inf-0.170762]' 225
+PCT_FREE_MEAL='(-inf-0.20415]' PCT_More_than_INCOME_60000='(0.708078-inf)' 295
+PCT_FREE_MEAL='(-inf-0.20415]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 268
+PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 260
+PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 272
+PCT_FREE_MEAL='(0.6535-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 214
+PCT_Single_Family='(-inf-0.170762]' PCT_More_than_INCOME_60000='(0.708078-inf)' 249
+PCT_Single_Family='(-inf-0.170762]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 223
+PCT_Single_Family='(0.170762-0.252067]' PCT_More_than_INCOME_60000='(0.567065-0.708078]' 182
+PCT_Single_Family='(0.170762-0.252067]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.3345-0.515]' 188
+PCT_Single_Family='(0.252067-0.352997]' PCT_More_than_INCOME_60000='(0.40602-0.567065]' 193
+PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 293
+PCT_Single_Family='(0.352997-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 202
+PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 286
+PCT_More_than_INCOME_60000='(0.40602-0.567065]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.1905-0.3345]' 219
+PCT_More_than_INCOME_60000='(0.708078-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 278
+
+Size of set of large itemsets L(3): 31
+
+Large Itemsets L(3):
+School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 202
+School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 194
+School_Grade='(-inf-5.5]' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 194
+PCT_Asian='(-inf-0.004892]' PCT_Black='(-inf-0.004035]' PCT_PI='(-inf-0.000242]' 182
+PCT_hisp='(-inf-0.118039]' PCT_White='(0.802504-inf)' PCT_PI='(-inf-0.000242]' 245
+PCT_hisp='(-inf-0.118039]' PCT_White='(0.802504-inf)' PCT_FREE_MEAL='(-inf-0.20415]' 187
+PCT_hisp='(-inf-0.118039]' PCT_FREE_MEAL='(-inf-0.20415]' PCT_More_than_INCOME_60000='(0.708078-inf)' 187
+PCT_hisp='(-inf-0.118039]' PCT_FREE_MEAL='(-inf-0.20415]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 181
+PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' 251
+PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 328
+PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 235
+PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 239
+PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 185
+PCT_hisp='(0.458226-inf)' PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 231
+PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 222
+PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 230
+PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 193
+PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 190
+PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 230
+PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 239
+PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 236
+PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 181
+PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219
+PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 191
+PCT_FREE_MEAL='(-inf-0.20415]' PCT_Single_Family='(-inf-0.170762]' PCT_More_than_INCOME_60000='(0.708078-inf)' 193
+PCT_FREE_MEAL='(-inf-0.20415]' PCT_Single_Family='(-inf-0.170762]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 184
+PCT_FREE_MEAL='(-inf-0.20415]' PCT_More_than_INCOME_60000='(0.708078-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 214
+PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 204
+PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 196
+PCT_Single_Family='(-inf-0.170762]' PCT_More_than_INCOME_60000='(0.708078-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 187
+PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 182
+
+Size of set of large itemsets L(4): 6
+
+Large Itemsets L(4):
+School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 182
+PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 215
+PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 217
+PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219
+PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 188
+PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 192
+
+Best rules found:
+
+   1. PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' 246 ==> PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 188    conf:(0.76) < lift:(5.13)> lev:(0.08) [151] conv:(3.55)
+   2. PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 270 ==> PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' 188    conf:(0.7) < lift:(5.13)> lev:(0.08) [151] conv:(2.81)
+   3. PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 260 ==> PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 192    conf:(0.74) < lift:(4.96)> lev:(0.08) [153] conv:(3.21)
+   4. PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 270 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 192    conf:(0.71) < lift:(4.96)> lev:(0.08) [153] conv:(2.93)
+   5. PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 273 ==> PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 188    conf:(0.69) < lift:(4.76)> lev:(0.08) [148] conv:(2.72)
+   6. PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 262 ==> PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 188    conf:(0.72) < lift:(4.76)> lev:(0.08) [148] conv:(2.97)
+   7. PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 273 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 192    conf:(0.7) < lift:(4.69)> lev:(0.08) [151] conv:(2.83)
+   8. PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 272 ==> PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 192    conf:(0.71) < lift:(4.69)> lev:(0.08) [151] conv:(2.85)
+   9. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 366 ==> PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' 217    conf:(0.59) < lift:(4.37)> lev:(0.09) [167] conv:(2.11)
+  10. PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' 246 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 217    conf:(0.88) < lift:(4.37)> lev:(0.09) [167] conv:(6.54)
+  11. PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 350 ==> PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219    conf:(0.63) < lift:(4.2)> lev:(0.09) [166] conv:(2.26)
+  12. PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 270 ==> PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 219    conf:(0.81) < lift:(4.2)> lev:(0.09) [166] conv:(4.19)
+  13. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 366 ==> PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219    conf:(0.6) < lift:(4.14)> lev:(0.09) [166] conv:(2.12)
+  14. PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 262 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 219    conf:(0.84) < lift:(4.14)> lev:(0.09) [166] conv:(4.75)
+  15. School_Grade='(-inf-5.5]' PCT_White='(-inf-0.383592]' 228 ==> PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 182    conf:(0.8) < lift:(4.13)> lev:(0.08) [137] conv:(3.91)
+  16. PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 350 ==> School_Grade='(-inf-5.5]' PCT_White='(-inf-0.383592]' 182    conf:(0.52) < lift:(4.13)> lev:(0.08) [137] conv:(1.81)
+  17. PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 350 ==> PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 217    conf:(0.62) < lift:(4.12)> lev:(0.09) [164] conv:(2.22)
+  18. PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 273 ==> PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 217    conf:(0.79) < lift:(4.12)> lev:(0.09) [164] conv:(3.86)
+  19. PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' 274 ==> PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 215    conf:(0.78) < lift:(4.06)> lev:(0.09) [162] conv:(3.68)
+  20. PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 350 ==> PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' 215    conf:(0.61) < lift:(4.06)> lev:(0.09) [162] conv:(2.18)
+  21. School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' 223 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 182    conf:(0.82) < lift:(4.04)> lev:(0.08) [136] conv:(4.24)
+  22. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 366 ==> School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' 182    conf:(0.5) < lift:(4.04)> lev:(0.08) [136] conv:(1.73)
+  23. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 380 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 217    conf:(0.57) < lift:(3.98)> lev:(0.09) [162] conv:(1.98)
+  24. PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 260 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 217    conf:(0.83) < lift:(3.98)> lev:(0.09) [162] conv:(4.67)
+  25. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 380 ==> School_Grade='(-inf-5.5]' PCT_FREE_MEAL='(0.6535-inf)' 182    conf:(0.48) < lift:(3.91)> lev:(0.07) [135] conv:(1.68)
+  26. School_Grade='(-inf-5.5]' PCT_FREE_MEAL='(0.6535-inf)' 222 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 182    conf:(0.82) < lift:(3.91)> lev:(0.07) [135] conv:(4.28)
+  27. PCT_White='(-inf-0.383592]' 454 ==> PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 217    conf:(0.48) < lift:(3.9)> lev:(0.09) [161] conv:(1.67)
+  28. PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 222 ==> PCT_White='(-inf-0.383592]' 217    conf:(0.98) < lift:(3.9)> lev:(0.09) [161] conv:(27.73)
+  29. PCT_White='(-inf-0.383592]' 454 ==> PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 188    conf:(0.41) < lift:(3.89)> lev:(0.08) [139] conv:(1.52)
+  30. PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 193 ==> PCT_White='(-inf-0.383592]' 188    conf:(0.97) < lift:(3.89)> lev:(0.08) [139] conv:(24.11)
+  31. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 380 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219    conf:(0.58) < lift:(3.84)> lev:(0.09) [161] conv:(1.99)
+  32. PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 272 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 219    conf:(0.81) < lift:(3.84)> lev:(0.09) [161] conv:(3.98)
+  33. PCT_White='(-inf-0.383592]' 454 ==> PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' 235    conf:(0.52) < lift:(3.81)> lev:(0.1) [173] conv:(1.78)
+  34. PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' 246 ==> PCT_White='(-inf-0.383592]' 235    conf:(0.96) < lift:(3.81)> lev:(0.1) [173] conv:(15.36)
+  35. PCT_White='(-inf-0.383592]' 454 ==> PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219    conf:(0.48) < lift:(3.8)> lev:(0.09) [161] conv:(1.68)
+  36. PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 230 ==> PCT_White='(-inf-0.383592]' 219    conf:(0.95) < lift:(3.8)> lev:(0.09) [161] conv:(14.36)
+  37. PCT_White='(-inf-0.383592]' 454 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 192    conf:(0.42) < lift:(3.76)> lev:(0.08) [140] conv:(1.53)
+  38. PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 204 ==> PCT_White='(-inf-0.383592]' 192    conf:(0.94) < lift:(3.76)> lev:(0.08) [140] conv:(11.76)
+  39. PCT_hisp='(0.458226-inf)' 453 ==> School_Grade='(-inf-5.5]' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 182    conf:(0.4) < lift:(3.75)> lev:(0.07) [133] conv:(1.49)
+  40. School_Grade='(-inf-5.5]' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 194 ==> PCT_hisp='(0.458226-inf)' 182    conf:(0.94) < lift:(3.75)> lev:(0.07) [133] conv:(11.19)
+  41. PCT_White='(-inf-0.383592]' 454 ==> School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 182    conf:(0.4) < lift:(3.74)> lev:(0.07) [133] conv:(1.48)
+  42. School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 194 ==> PCT_White='(-inf-0.383592]' 182    conf:(0.94) < lift:(3.74)> lev:(0.07) [133] conv:(11.18)
+  43. PCT_White='(-inf-0.383592]' 454 ==> PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 328    conf:(0.72) < lift:(3.74)> lev:(0.13) [240] conv:(2.88)
+  44. PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 350 ==> PCT_White='(-inf-0.383592]' 328    conf:(0.94) < lift:(3.74)> lev:(0.13) [240] conv:(11.4)
+  45. PCT_hisp='(0.458226-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 215    conf:(0.47) < lift:(3.74)> lev:(0.09) [157] conv:(1.65)
+  46. PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 230 ==> PCT_hisp='(0.458226-inf)' 215    conf:(0.93) < lift:(3.74)> lev:(0.09) [157] conv:(10.78)
+  47. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_White='(-inf-0.383592]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 191    conf:(0.41) < lift:(3.74)> lev:(0.08) [139] conv:(1.51)
+  48. PCT_White='(-inf-0.383592]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 201 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 191    conf:(0.95) < lift:(3.74)> lev:(0.08) [139] conv:(13.62)
+  49. PCT_White='(-inf-0.383592]' 454 ==> PCT_hisp='(0.458226-inf)' PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 215    conf:(0.47) < lift:(3.71)> lev:(0.09) [157] conv:(1.65)
+  50. PCT_hisp='(0.458226-inf)' PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 231 ==> PCT_White='(-inf-0.383592]' 215    conf:(0.93) < lift:(3.71)> lev:(0.09) [157] conv:(10.18)
+  51. PCT_hisp='(0.458226-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219    conf:(0.48) < lift:(3.71)> lev:(0.09) [160] conv:(1.68)
+  52. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 236 ==> PCT_hisp='(0.458226-inf)' 219    conf:(0.93) < lift:(3.71)> lev:(0.09) [160] conv:(9.83)
+  53. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 217    conf:(0.48) < lift:(3.69)> lev:(0.09) [158] conv:(1.66)
+  54. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 235 ==> PCT_FREE_MEAL='(0.6535-inf)' 217    conf:(0.92) < lift:(3.69)> lev:(0.09) [158] conv:(9.28)
+  55. PCT_hisp='(0.458226-inf)' 453 ==> PCT_White='(-inf-0.383592]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 185    conf:(0.41) < lift:(3.68)> lev:(0.07) [134] conv:(1.5)
+  56. PCT_White='(-inf-0.383592]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 201 ==> PCT_hisp='(0.458226-inf)' 185    conf:(0.92) < lift:(3.68)> lev:(0.07) [134] conv:(8.87)
+  57. PCT_White='(-inf-0.383592]' 454 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 239    conf:(0.53) < lift:(3.67)> lev:(0.1) [173] conv:(1.8)
+  58. PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 260 ==> PCT_White='(-inf-0.383592]' 239    conf:(0.92) < lift:(3.67)> lev:(0.1) [173] conv:(8.86)
+  59. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219    conf:(0.48) < lift:(3.67)> lev:(0.09) [159] conv:(1.67)
+  60. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 239 ==> PCT_FREE_MEAL='(0.6535-inf)' 219    conf:(0.92) < lift:(3.67)> lev:(0.09) [159] conv:(8.54)
+  61. PCT_hisp='(0.458226-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' 251    conf:(0.55) < lift:(3.66)> lev:(0.1) [182] conv:(1.89)
+  62. PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' 274 ==> PCT_hisp='(0.458226-inf)' 251    conf:(0.92) < lift:(3.66)> lev:(0.1) [182] conv:(8.56)
+  63. PCT_White='(-inf-0.383592]' 454 ==> PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 239    conf:(0.53) < lift:(3.64)> lev:(0.1) [173] conv:(1.8)
+  64. PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 262 ==> PCT_White='(-inf-0.383592]' 239    conf:(0.91) < lift:(3.64)> lev:(0.1) [173] conv:(8.18)
+  65. PCT_hisp='(0.458226-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 217    conf:(0.48) < lift:(3.63)> lev:(0.09) [157] conv:(1.66)
+  66. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 239 ==> PCT_hisp='(0.458226-inf)' 217    conf:(0.91) < lift:(3.63)> lev:(0.09) [157] conv:(7.79)
+  67. School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' 223 ==> PCT_White='(-inf-0.383592]' 202    conf:(0.91) < lift:(3.62)> lev:(0.08) [146] conv:(7.6)
+  68. PCT_White='(-inf-0.383592]' 454 ==> School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' 202    conf:(0.44) < lift:(3.62)> lev:(0.08) [146] conv:(1.57)
+  69. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' 222    conf:(0.49) < lift:(3.61)> lev:(0.09) [160] conv:(1.69)
+  70. PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' 246 ==> PCT_FREE_MEAL='(0.6535-inf)' 222    conf:(0.9) < lift:(3.61)> lev:(0.09) [160] conv:(7.38)
+  71. School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 202 ==> PCT_FREE_MEAL='(0.6535-inf)' 182    conf:(0.9) < lift:(3.6)> lev:(0.07) [131] conv:(7.21)
+  72. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 182    conf:(0.4) < lift:(3.6)> lev:(0.07) [131] conv:(1.48)
+  73. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_White='(-inf-0.383592]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 181    conf:(0.4) < lift:(3.6)> lev:(0.07) [130] conv:(1.48)
+  74. PCT_White='(-inf-0.383592]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 201 ==> PCT_FREE_MEAL='(0.6535-inf)' 181    conf:(0.9) < lift:(3.6)> lev:(0.07) [130] conv:(7.18)
+  75. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_FREE_MEAL='(0.6535-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 196    conf:(0.43) < lift:(3.6)> lev:(0.08) [141] conv:(1.53)
+  76. PCT_FREE_MEAL='(0.6535-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 214 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 196    conf:(0.92) < lift:(3.6)> lev:(0.08) [141] conv:(8.4)
+  77. PCT_FREE_MEAL='(-inf-0.20415]' 452 ==> PCT_hisp='(-inf-0.118039]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 181    conf:(0.4) < lift:(3.59)> lev:(0.07) [130] conv:(1.48)
+  78. PCT_hisp='(-inf-0.118039]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 202 ==> PCT_FREE_MEAL='(-inf-0.20415]' 181    conf:(0.9) < lift:(3.59)> lev:(0.07) [130] conv:(6.89)
+  79. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_hisp='(0.458226-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 190    conf:(0.41) < lift:(3.59)> lev:(0.08) [137] conv:(1.5)
+  80. PCT_hisp='(0.458226-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 208 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 190    conf:(0.91) < lift:(3.59)> lev:(0.08) [137] conv:(8.16)
+  81. PCT_hisp='(0.458226-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 328    conf:(0.72) < lift:(3.58)> lev:(0.13) [236] conv:(2.87)
+  82. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 366 ==> PCT_hisp='(0.458226-inf)' 328    conf:(0.9) < lift:(3.58)> lev:(0.13) [236] conv:(7.04)
+  83. PCT_White='(-inf-0.383592]' 454 ==> PCT_hisp='(0.458226-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 185    conf:(0.41) < lift:(3.55)> lev:(0.07) [132] conv:(1.49)
+  84. PCT_hisp='(0.458226-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 208 ==> PCT_White='(-inf-0.383592]' 185    conf:(0.89) < lift:(3.55)> lev:(0.07) [132] conv:(6.5)
+  85. PCT_hisp='(0.458226-inf)' PCT_PI='(-inf-0.000242]' 300 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 215    conf:(0.72) < lift:(3.55)> lev:(0.09) [154] conv:(2.78)
+  86. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 366 ==> PCT_hisp='(0.458226-inf)' PCT_PI='(-inf-0.000242]' 215    conf:(0.59) < lift:(3.55)> lev:(0.09) [154] conv:(2.01)
+  87. PCT_hisp='(0.458226-inf)' 453 ==> School_Grade='(-inf-5.5]' PCT_White='(-inf-0.383592]' 202    conf:(0.45) < lift:(3.54)> lev:(0.08) [145] conv:(1.57)
+  88. School_Grade='(-inf-5.5]' PCT_White='(-inf-0.383592]' 228 ==> PCT_hisp='(0.458226-inf)' 202    conf:(0.89) < lift:(3.54)> lev:(0.08) [145] conv:(6.33)
+  89. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_Single_Family='(0.352997-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 182    conf:(0.39) < lift:(3.54)> lev:(0.07) [130] conv:(1.46)
+  90. PCT_Single_Family='(0.352997-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 202 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 182    conf:(0.9) < lift:(3.54)> lev:(0.07) [130] conv:(7.17)
+  91. PCT_hisp='(0.458226-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 239    conf:(0.53) < lift:(3.54)> lev:(0.09) [171] conv:(1.79)
+  92. PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 270 ==> PCT_hisp='(0.458226-inf)' 239    conf:(0.89) < lift:(3.54)> lev:(0.09) [171] conv:(6.33)
+  93. PCT_FREE_MEAL='(-inf-0.20415]' 452 ==> PCT_hisp='(-inf-0.118039]' PCT_More_than_INCOME_60000='(0.708078-inf)' 187    conf:(0.41) < lift:(3.52)> lev:(0.07) [133] conv:(1.5)
+  94. PCT_hisp='(-inf-0.118039]' PCT_More_than_INCOME_60000='(0.708078-inf)' 213 ==> PCT_FREE_MEAL='(-inf-0.20415]' 187    conf:(0.88) < lift:(3.52)> lev:(0.07) [133] conv:(5.92)
+  95. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 230    conf:(0.51) < lift:(3.51)> lev:(0.09) [164] conv:(1.73)
+  96. PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 262 ==> PCT_FREE_MEAL='(0.6535-inf)' 230    conf:(0.88) < lift:(3.51)> lev:(0.09) [164] conv:(5.95)
+  97. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 380 ==> PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 215    conf:(0.57) < lift:(3.51)> lev:(0.08) [153] conv:(1.92)
+  98. PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 292 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 215    conf:(0.74) < lift:(3.51)> lev:(0.08) [153] conv:(2.96)
+  99. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 192    conf:(0.42) < lift:(3.51)> lev:(0.08) [137] conv:(1.52)
+ 100. PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219 ==> PCT_FREE_MEAL='(0.6535-inf)' 192    conf:(0.88) < lift:(3.51)> lev:(0.08) [137] conv:(5.87)
+ 101. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 239    conf:(0.53) < lift:(3.5)> lev:(0.09) [170] conv:(1.79)
+ 102. PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 273 ==> PCT_FREE_MEAL='(0.6535-inf)' 239    conf:(0.88) < lift:(3.5)> lev:(0.09) [170] conv:(5.85)
+ 103. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 236    conf:(0.52) < lift:(3.5)> lev:(0.09) [168] conv:(1.77)
+ 104. PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 270 ==> PCT_FREE_MEAL='(0.6535-inf)' 236    conf:(0.87) < lift:(3.5)> lev:(0.09) [168] conv:(5.79)
+ 105. PCT_hisp='(0.458226-inf)' 453 ==> School_Grade='(-inf-5.5]' PCT_FREE_MEAL='(0.6535-inf)' 194    conf:(0.43) < lift:(3.5)> lev:(0.08) [138] conv:(1.53)
+ 106. School_Grade='(-inf-5.5]' PCT_FREE_MEAL='(0.6535-inf)' 222 ==> PCT_hisp='(0.458226-inf)' 194    conf:(0.87) < lift:(3.5)> lev:(0.08) [138] conv:(5.74)
+ 107. PCT_White='(-inf-0.383592]' 454 ==> School_Grade='(-inf-5.5]' PCT_FREE_MEAL='(0.6535-inf)' 194    conf:(0.43) < lift:(3.49)> lev:(0.08) [138] conv:(1.53)
+ 108. School_Grade='(-inf-5.5]' PCT_FREE_MEAL='(0.6535-inf)' 222 ==> PCT_White='(-inf-0.383592]' 194    conf:(0.87) < lift:(3.49)> lev:(0.08) [138] conv:(5.74)
+ 109. School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' 223 ==> PCT_FREE_MEAL='(0.6535-inf)' 194    conf:(0.87) < lift:(3.48)> lev:(0.08) [138] conv:(5.58)
+ 110. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> School_Grade='(-inf-5.5]' PCT_hisp='(0.458226-inf)' 194    conf:(0.43) < lift:(3.48)> lev:(0.08) [138] conv:(1.53)
+ 111. PCT_FREE_MEAL='(-inf-0.20415]' PCT_Single_Family='(-inf-0.170762]' 225 ==> PCT_More_than_INCOME_60000='(0.708078-inf)' 193    conf:(0.86) < lift:(3.48)> lev:(0.08) [137] conv:(5.14)
+ 112. PCT_More_than_INCOME_60000='(0.708078-inf)' 447 ==> PCT_FREE_MEAL='(-inf-0.20415]' PCT_Single_Family='(-inf-0.170762]' 193    conf:(0.43) < lift:(3.48)> lev:(0.08) [137] conv:(1.54)
+ 113. PCT_hisp='(-inf-0.118039]' 453 ==> PCT_White='(0.802504-inf)' PCT_FREE_MEAL='(-inf-0.20415]' 187    conf:(0.41) < lift:(3.46)> lev:(0.07) [133] conv:(1.49)
+ 114. PCT_White='(0.802504-inf)' PCT_FREE_MEAL='(-inf-0.20415]' 216 ==> PCT_hisp='(-inf-0.118039]' 187    conf:(0.87) < lift:(3.46)> lev:(0.07) [133] conv:(5.4)
+ 115. PCT_White='(-inf-0.383592]' 454 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 236    conf:(0.52) < lift:(3.46)> lev:(0.09) [167] conv:(1.76)
+ 116. PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 272 ==> PCT_White='(-inf-0.383592]' 236    conf:(0.87) < lift:(3.46)> lev:(0.09) [167] conv:(5.51)
+ 117. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 380 ==> PCT_FREE_MEAL='(0.6535-inf)' 328    conf:(0.86) < lift:(3.45)> lev:(0.13) [233] conv:(5.38)
+ 118. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 328    conf:(0.72) < lift:(3.45)> lev:(0.13) [233] conv:(2.84)
+ 119. PCT_hisp='(0.458226-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 235    conf:(0.52) < lift:(3.44)> lev:(0.09) [166] conv:(1.76)
+ 120. PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 273 ==> PCT_hisp='(0.458226-inf)' 235    conf:(0.86) < lift:(3.44)> lev:(0.09) [166] conv:(5.25)
+ 121. PCT_hisp='(0.458226-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 188    conf:(0.42) < lift:(3.43)> lev:(0.07) [133] conv:(1.5)
+ 122. PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219 ==> PCT_hisp='(0.458226-inf)' 188    conf:(0.86) < lift:(3.43)> lev:(0.07) [133] conv:(5.13)
+ 123. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' 251 ==> PCT_FREE_MEAL='(0.6535-inf)' 215    conf:(0.86) < lift:(3.43)> lev:(0.08) [152] conv:(5.09)
+ 124. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' 215    conf:(0.47) < lift:(3.43)> lev:(0.08) [152] conv:(1.63)
+ 125. PCT_hisp='(0.458226-inf)' 453 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 222    conf:(0.49) < lift:(3.42)> lev:(0.09) [157] conv:(1.67)
+ 126. PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 260 ==> PCT_hisp='(0.458226-inf)' 222    conf:(0.85) < lift:(3.42)> lev:(0.09) [157] conv:(5)
+ 127. School_Grade='(-inf-5.5]' PCT_White='(-inf-0.383592]' 228 ==> PCT_FREE_MEAL='(0.6535-inf)' 194    conf:(0.85) < lift:(3.4)> lev:(0.08) [137] conv:(4.89)
+ 128. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> School_Grade='(-inf-5.5]' PCT_White='(-inf-0.383592]' 194    conf:(0.43) < lift:(3.4)> lev:(0.08) [137] conv:(1.52)
+ 129. PCT_More_than_INCOME_60000='(0.708078-inf)' 447 ==> PCT_Single_Family='(-inf-0.170762]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 187    conf:(0.42) < lift:(3.4)> lev:(0.07) [131] conv:(1.5)
+ 130. PCT_Single_Family='(-inf-0.170762]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 223 ==> PCT_More_than_INCOME_60000='(0.708078-inf)' 187    conf:(0.84) < lift:(3.4)> lev:(0.07) [131] conv:(4.54)
+ 131. PCT_hisp='(0.458226-inf)' 453 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 230    conf:(0.51) < lift:(3.38)> lev:(0.09) [162] conv:(1.72)
+ 132. PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 272 ==> PCT_hisp='(0.458226-inf)' 230    conf:(0.85) < lift:(3.38)> lev:(0.09) [162] conv:(4.74)
+ 133. PCT_White='(-inf-0.383592]' 454 ==> PCT_FREE_MEAL='(0.6535-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 181    conf:(0.4) < lift:(3.38)> lev:(0.07) [127] conv:(1.46)
+ 134. PCT_FREE_MEAL='(0.6535-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 214 ==> PCT_White='(-inf-0.383592]' 181    conf:(0.85) < lift:(3.38)> lev:(0.07) [127] conv:(4.72)
+ 135. PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' 274 ==> PCT_FREE_MEAL='(0.6535-inf)' 230    conf:(0.84) < lift:(3.36)> lev:(0.09) [161] conv:(4.57)
+ 136. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_White='(-inf-0.383592]' PCT_PI='(-inf-0.000242]' 230    conf:(0.51) < lift:(3.36)> lev:(0.09) [161] conv:(1.72)
+ 137. PCT_hisp='(0.458226-inf)' 453 ==> PCT_White='(-inf-0.383592]' 380    conf:(0.84) < lift:(3.35)> lev:(0.15) [266] conv:(4.59)
+ 138. PCT_White='(-inf-0.383592]' 454 ==> PCT_hisp='(0.458226-inf)' 380    conf:(0.84) < lift:(3.35)> lev:(0.15) [266] conv:(4.54)
+ 139. PCT_FREE_MEAL='(-inf-0.20415]' PCT_Single_Family='(-inf-0.170762]' 225 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 184    conf:(0.82) < lift:(3.34)> lev:(0.07) [128] conv:(4.05)
+ 140. EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 443 ==> PCT_FREE_MEAL='(-inf-0.20415]' PCT_Single_Family='(-inf-0.170762]' 184    conf:(0.42) < lift:(3.34)> lev:(0.07) [128] conv:(1.49)
+ 141. PCT_White='(-inf-0.383592]' 454 ==> PCT_hisp='(0.458226-inf)' PCT_PI='(-inf-0.000242]' 251    conf:(0.55) < lift:(3.34)> lev:(0.1) [175] conv:(1.86)
+ 142. PCT_hisp='(0.458226-inf)' PCT_PI='(-inf-0.000242]' 300 ==> PCT_White='(-inf-0.383592]' 251    conf:(0.84) < lift:(3.34)> lev:(0.1) [175] conv:(4.5)
+ 143. PCT_FREE_MEAL='(-inf-0.20415]' 452 ==> PCT_Single_Family='(-inf-0.170762]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 184    conf:(0.41) < lift:(3.31)> lev:(0.07) [128] conv:(1.47)
+ 144. PCT_Single_Family='(-inf-0.170762]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 223 ==> PCT_FREE_MEAL='(-inf-0.20415]' 184    conf:(0.83) < lift:(3.31)> lev:(0.07) [128] conv:(4.18)
+ 145. PCT_White='(0.802504-inf)' 452 ==> PCT_hisp='(-inf-0.118039]' PCT_PI='(-inf-0.000242]' 245    conf:(0.54) < lift:(3.26)> lev:(0.09) [169] conv:(1.81)
+ 146. PCT_hisp='(-inf-0.118039]' PCT_PI='(-inf-0.000242]' 301 ==> PCT_White='(0.802504-inf)' 245    conf:(0.81) < lift:(3.26)> lev:(0.09) [169] conv:(3.96)
+ 147. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 366 ==> PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 192    conf:(0.52) < lift:(3.24)> lev:(0.07) [132] conv:(1.75)
+ 148. PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 293 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 192    conf:(0.66) < lift:(3.24)> lev:(0.07) [132] conv:(2.29)
+ 149. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 192    conf:(0.42) < lift:(3.24)> lev:(0.07) [132] conv:(1.5)
+ 150. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 236 ==> PCT_Single_Family='(0.352997-inf)' 192    conf:(0.81) < lift:(3.24)> lev:(0.07) [132] conv:(3.93)
+ 151. PCT_More_than_INCOME_60000='(0.708078-inf)' 447 ==> PCT_FREE_MEAL='(-inf-0.20415]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 214    conf:(0.48) < lift:(3.24)> lev:(0.08) [147] conv:(1.63)
+ 152. PCT_FREE_MEAL='(-inf-0.20415]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 268 ==> PCT_More_than_INCOME_60000='(0.708078-inf)' 214    conf:(0.8) < lift:(3.24)> lev:(0.08) [147] conv:(3.67)
+ 153. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219    conf:(0.48) < lift:(3.23)> lev:(0.08) [151] conv:(1.63)
+ 154. PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 270 ==> PCT_Single_Family='(0.352997-inf)' 219    conf:(0.81) < lift:(3.23)> lev:(0.08) [151] conv:(3.89)
+ 155. PCT_White='(-inf-0.383592]' 454 ==> PCT_FREE_MEAL='(0.6535-inf)' 366    conf:(0.81) < lift:(3.22)> lev:(0.14) [252] conv:(3.83)
+ 156. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_White='(-inf-0.383592]' 366    conf:(0.81) < lift:(3.22)> lev:(0.14) [252] conv:(3.86)
+ 157. PCT_hisp='(0.458226-inf)' 453 ==> PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 231    conf:(0.51) < lift:(3.16)> lev:(0.09) [158] conv:(1.7)
+ 158. PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 292 ==> PCT_hisp='(0.458226-inf)' 231    conf:(0.79) < lift:(3.16)> lev:(0.09) [158] conv:(3.53)
+ 159. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 239 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 192    conf:(0.8) < lift:(3.16)> lev:(0.07) [131] conv:(3.71)
+ 160. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 192    conf:(0.42) < lift:(3.16)> lev:(0.07) [131] conv:(1.48)
+ 161. PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 273 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 219    conf:(0.8) < lift:(3.15)> lev:(0.08) [149] conv:(3.7)
+ 162. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 219    conf:(0.48) < lift:(3.15)> lev:(0.08) [149] conv:(1.61)
+ 163. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 235 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 188    conf:(0.8) < lift:(3.14)> lev:(0.07) [128] conv:(3.65)
+ 164. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_Single_Family='(0.352997-inf)' 188    conf:(0.41) < lift:(3.14)> lev:(0.07) [128] conv:(1.46)
+ 165. PCT_White='(-inf-0.383592]' 454 ==> PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 230    conf:(0.51) < lift:(3.14)> lev:(0.09) [156] conv:(1.69)
+ 166. PCT_PI='(-inf-0.000242]' PCT_FREE_MEAL='(0.6535-inf)' 292 ==> PCT_White='(-inf-0.383592]' 230    conf:(0.79) < lift:(3.14)> lev:(0.09) [156] conv:(3.47)
+ 167. PCT_hisp='(-inf-0.118039]' 453 ==> PCT_White='(0.802504-inf)' 355    conf:(0.78) < lift:(3.14)> lev:(0.13) [242] conv:(3.43)
+ 168. PCT_White='(0.802504-inf)' 452 ==> PCT_hisp='(-inf-0.118039]' 355    conf:(0.79) < lift:(3.14)> lev:(0.13) [242] conv:(3.46)
+ 169. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 188    conf:(0.41) < lift:(3.13)> lev:(0.07) [127] conv:(1.47)
+ 170. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 239 ==> PCT_Single_Family='(0.352997-inf)' 188    conf:(0.79) < lift:(3.13)> lev:(0.07) [127] conv:(3.44)
+ 171. PCT_hisp='(-inf-0.118039]' 453 ==> PCT_White='(0.802504-inf)' PCT_PI='(-inf-0.000242]' 245    conf:(0.54) < lift:(3.11)> lev:(0.09) [166] conv:(1.79)
+ 172. PCT_White='(0.802504-inf)' PCT_PI='(-inf-0.000242]' 315 ==> PCT_hisp='(-inf-0.118039]' 245    conf:(0.78) < lift:(3.11)> lev:(0.09) [166] conv:(3.33)
+ 173. PCT_FREE_MEAL='(-inf-0.20415]' 452 ==> PCT_Single_Family='(-inf-0.170762]' PCT_More_than_INCOME_60000='(0.708078-inf)' 193    conf:(0.43) < lift:(3.11)> lev:(0.07) [130] conv:(1.5)
+ 174. PCT_Single_Family='(-inf-0.170762]' PCT_More_than_INCOME_60000='(0.708078-inf)' 249 ==> PCT_FREE_MEAL='(-inf-0.20415]' 193    conf:(0.78) < lift:(3.11)> lev:(0.07) [130] conv:(3.28)
+ 175. PCT_hisp='(0.458226-inf)' 453 ==> PCT_FREE_MEAL='(0.6535-inf)' 350    conf:(0.77) < lift:(3.09)> lev:(0.13) [236] conv:(3.27)
+ 176. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_hisp='(0.458226-inf)' 350    conf:(0.77) < lift:(3.09)> lev:(0.13) [236] conv:(3.27)
+ 177. PCT_FREE_MEAL='(-inf-0.20415]' 452 ==> PCT_More_than_INCOME_60000='(0.708078-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 214    conf:(0.47) < lift:(3.09)> lev:(0.08) [144] conv:(1.6)
+ 178. PCT_More_than_INCOME_60000='(0.708078-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 278 ==> PCT_FREE_MEAL='(-inf-0.20415]' 214    conf:(0.77) < lift:(3.09)> lev:(0.08) [144] conv:(3.21)
+ 179. PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 260 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 204    conf:(0.78) < lift:(3.08)> lev:(0.08) [137] conv:(3.4)
+ 180. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_Single_Family='(0.352997-inf)' 204    conf:(0.44) < lift:(3.08)> lev:(0.08) [137] conv:(1.53)
+ 181. PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' 246 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 193    conf:(0.78) < lift:(3.08)> lev:(0.07) [130] conv:(3.4)
+ 182. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_hisp='(0.458226-inf)' PCT_Single_Family='(0.352997-inf)' 193    conf:(0.42) < lift:(3.08)> lev:(0.07) [130] conv:(1.48)
+ 183. PCT_hisp='(0.458226-inf)' PCT_PI='(-inf-0.000242]' 300 ==> PCT_FREE_MEAL='(0.6535-inf)' 231    conf:(0.77) < lift:(3.08)> lev:(0.09) [156] conv:(3.21)
+ 184. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_hisp='(0.458226-inf)' PCT_PI='(-inf-0.000242]' 231    conf:(0.51) < lift:(3.08)> lev:(0.09) [156] conv:(1.7)
+ 185. PCT_Single_Family='(-inf-0.170762]' PCT_More_than_INCOME_60000='(0.708078-inf)' 249 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 187    conf:(0.75) < lift:(3.07)> lev:(0.07) [126] conv:(2.99)
+ 186. EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 443 ==> PCT_Single_Family='(-inf-0.170762]' PCT_More_than_INCOME_60000='(0.708078-inf)' 187    conf:(0.42) < lift:(3.07)> lev:(0.07) [126] conv:(1.49)
+ 187. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 380 ==> PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 188    conf:(0.49) < lift:(3.06)> lev:(0.07) [126] conv:(1.65)
+ 188. PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 293 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 188    conf:(0.64) < lift:(3.06)> lev:(0.07) [126] conv:(2.18)
+ 189. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 204    conf:(0.45) < lift:(2.99)> lev:(0.07) [135] conv:(1.53)
+ 190. PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 272 ==> PCT_Single_Family='(0.352997-inf)' 204    conf:(0.75) < lift:(2.99)> lev:(0.07) [135] conv:(2.95)
+ 191. PCT_White='(-inf-0.383592]' 454 ==> PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 219    conf:(0.48) < lift:(2.98)> lev:(0.08) [145] conv:(1.61)
+ 192. PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 293 ==> PCT_White='(-inf-0.383592]' 219    conf:(0.75) < lift:(2.98)> lev:(0.08) [145] conv:(2.93)
+ 193. PCT_FREE_MEAL='(-inf-0.20415]' PCT_More_than_INCOME_60000='(0.708078-inf)' 295 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 214    conf:(0.73) < lift:(2.97)> lev:(0.08) [141] conv:(2.72)
+ 194. EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 443 ==> PCT_FREE_MEAL='(-inf-0.20415]' PCT_More_than_INCOME_60000='(0.708078-inf)' 214    conf:(0.48) < lift:(2.97)> lev:(0.08) [141] conv:(1.61)
+ 195. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 193    conf:(0.42) < lift:(2.93)> lev:(0.07) [127] conv:(1.48)
+ 196. PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 262 ==> PCT_Single_Family='(0.352997-inf)' 193    conf:(0.74) < lift:(2.93)> lev:(0.07) [127] conv:(2.8)
+ 197. PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 262 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 190    conf:(0.73) < lift:(2.91)> lev:(0.07) [124] conv:(2.69)
+ 198. EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 452 ==> PCT_hisp='(0.458226-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 190    conf:(0.42) < lift:(2.91)> lev:(0.07) [124] conv:(1.47)
+ 199. PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 272 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 196    conf:(0.72) < lift:(2.89)> lev:(0.07) [128] conv:(2.65)
+ 200. EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 452 ==> PCT_FREE_MEAL='(0.6535-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 196    conf:(0.43) < lift:(2.89)> lev:(0.07) [128] conv:(1.49)
+ 201. PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 270 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 191    conf:(0.71) < lift:(2.84)> lev:(0.07) [123] conv:(2.53)
+ 202. EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 452 ==> PCT_White='(-inf-0.383592]' PCT_More_than_INCOME_60000='(-inf-0.40602]' 191    conf:(0.42) < lift:(2.84)> lev:(0.07) [123] conv:(1.47)
+ 203. PCT_Single_Family='(-inf-0.170762]' 446 ==> PCT_FREE_MEAL='(-inf-0.20415]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 184    conf:(0.41) < lift:(2.79)> lev:(0.07) [118] conv:(1.45)
+ 204. PCT_FREE_MEAL='(-inf-0.20415]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 268 ==> PCT_Single_Family='(-inf-0.170762]' 184    conf:(0.69) < lift:(2.79)> lev:(0.07) [118] conv:(2.38)
+ 205. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 204    conf:(0.45) < lift:(2.78)> lev:(0.07) [130] conv:(1.52)
+ 206. PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 293 ==> PCT_FREE_MEAL='(0.6535-inf)' 204    conf:(0.7) < lift:(2.78)> lev:(0.07) [130] conv:(2.44)
+ 207. PCT_hisp='(-inf-0.118039]' PCT_FREE_MEAL='(-inf-0.20415]' 273 ==> PCT_More_than_INCOME_60000='(0.708078-inf)' 187    conf:(0.68) < lift:(2.78)> lev:(0.07) [119] conv:(2.36)
+ 208. PCT_More_than_INCOME_60000='(0.708078-inf)' 447 ==> PCT_hisp='(-inf-0.118039]' PCT_FREE_MEAL='(-inf-0.20415]' 187    conf:(0.42) < lift:(2.78)> lev:(0.07) [119] conv:(1.45)
+ 209. PCT_White='(0.802504-inf)' 452 ==> PCT_hisp='(-inf-0.118039]' PCT_FREE_MEAL='(-inf-0.20415]' 187    conf:(0.41) < lift:(2.75)> lev:(0.07) [118] conv:(1.44)
+ 210. PCT_hisp='(-inf-0.118039]' PCT_FREE_MEAL='(-inf-0.20415]' 273 ==> PCT_White='(0.802504-inf)' 187    conf:(0.68) < lift:(2.75)> lev:(0.07) [118] conv:(2.36)
+ 211. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 196    conf:(0.43) < lift:(2.74)> lev:(0.07) [124] conv:(1.48)
+ 212. PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 286 ==> PCT_FREE_MEAL='(0.6535-inf)' 196    conf:(0.69) < lift:(2.74)> lev:(0.07) [124] conv:(2.36)
+ 213. PCT_Single_Family='(-inf-0.170762]' 446 ==> PCT_More_than_INCOME_60000='(0.708078-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 187    conf:(0.42) < lift:(2.73)> lev:(0.07) [118] conv:(1.45)
+ 214. PCT_More_than_INCOME_60000='(0.708078-inf)' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 278 ==> PCT_Single_Family='(-inf-0.170762]' 187    conf:(0.67) < lift:(2.73)> lev:(0.07) [118] conv:(2.28)
+ 215. PCT_hisp='(-inf-0.118039]' PCT_FREE_MEAL='(-inf-0.20415]' 273 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 181    conf:(0.66) < lift:(2.71)> lev:(0.06) [114] conv:(2.22)
+ 216. EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 443 ==> PCT_hisp='(-inf-0.118039]' PCT_FREE_MEAL='(-inf-0.20415]' 181    conf:(0.41) < lift:(2.71)> lev:(0.06) [114] conv:(1.43)
+ 217. PCT_hisp='(-inf-0.118039]' 453 ==> PCT_FREE_MEAL='(-inf-0.20415]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 181    conf:(0.4) < lift:(2.7)> lev:(0.06) [113] conv:(1.41)
+ 218. PCT_FREE_MEAL='(-inf-0.20415]' EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 268 ==> PCT_hisp='(-inf-0.118039]' 181    conf:(0.68) < lift:(2.7)> lev:(0.06) [113] conv:(2.28)
+ 219. PCT_White='(-inf-0.383592]' 454 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 191    conf:(0.42) < lift:(2.67)> lev:(0.07) [119] conv:(1.45)
+ 220. PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 286 ==> PCT_White='(-inf-0.383592]' 191    conf:(0.67) < lift:(2.67)> lev:(0.07) [119] conv:(2.23)
+ 221. PCT_Single_Family='(-inf-0.170762]' 446 ==> PCT_FREE_MEAL='(-inf-0.20415]' PCT_More_than_INCOME_60000='(0.708078-inf)' 193    conf:(0.43) < lift:(2.66)> lev:(0.07) [120] conv:(1.47)
+ 222. PCT_FREE_MEAL='(-inf-0.20415]' PCT_More_than_INCOME_60000='(0.708078-inf)' 295 ==> PCT_Single_Family='(-inf-0.170762]' 193    conf:(0.65) < lift:(2.66)> lev:(0.07) [120] conv:(2.16)
+ 223. PCT_hisp='(0.458226-inf)' 453 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 190    conf:(0.42) < lift:(2.66)> lev:(0.07) [118] conv:(1.45)
+ 224. PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 286 ==> PCT_hisp='(0.458226-inf)' 190    conf:(0.66) < lift:(2.66)> lev:(0.07) [118] conv:(2.21)
+ 225. PCT_FREE_MEAL='(-inf-0.20415]' 452 ==> PCT_More_than_INCOME_60000='(0.708078-inf)' 295    conf:(0.65) < lift:(2.65)> lev:(0.1) [183] conv:(2.16)
+ 226. PCT_More_than_INCOME_60000='(0.708078-inf)' 447 ==> PCT_FREE_MEAL='(-inf-0.20415]' 295    conf:(0.66) < lift:(2.65)> lev:(0.1) [183] conv:(2.19)
+ 227. PCT_hisp='(0.458226-inf)' 453 ==> PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 193    conf:(0.43) < lift:(2.63)> lev:(0.07) [119] conv:(1.45)
+ 228. PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 293 ==> PCT_hisp='(0.458226-inf)' 193    conf:(0.66) < lift:(2.63)> lev:(0.07) [119] conv:(2.18)
+ 229. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 328 ==> PCT_Single_Family='(0.352997-inf)' 217    conf:(0.66) < lift:(2.63)> lev:(0.07) [134] conv:(2.19)
+ 230. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 217    conf:(0.48) < lift:(2.63)> lev:(0.07) [134] conv:(1.56)
+ 231. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 328 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 219    conf:(0.67) < lift:(2.62)> lev:(0.07) [135] conv:(2.22)
+ 232. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 219    conf:(0.48) < lift:(2.62)> lev:(0.07) [135] conv:(1.55)
+ 233. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 366 ==> PCT_Single_Family='(0.352997-inf)' 239    conf:(0.65) < lift:(2.6)> lev:(0.08) [147] conv:(2.14)
+ 234. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 239    conf:(0.53) < lift:(2.6)> lev:(0.08) [147] conv:(1.67)
+ 235. PCT_hisp='(0.217836-0.458226]' 453 ==> PCT_White='(0.383592-0.669973]' 294    conf:(0.65) < lift:(2.6)> lev:(0.1) [180] conv:(2.12)
+ 236. PCT_White='(0.383592-0.669973]' 453 ==> PCT_hisp='(0.217836-0.458226]' 294    conf:(0.65) < lift:(2.6)> lev:(0.1) [180] conv:(2.12)
+ 237. PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 350 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 230    conf:(0.66) < lift:(2.58)> lev:(0.08) [140] conv:(2.16)
+ 238. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 230    conf:(0.5) < lift:(2.58)> lev:(0.08) [140] conv:(1.6)
+ 239. PCT_More_than_INCOME_60000='(0.708078-inf)' 447 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 278    conf:(0.62) < lift:(2.54)> lev:(0.09) [168] conv:(1.99)
+ 240. EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 443 ==> PCT_More_than_INCOME_60000='(0.708078-inf)' 278    conf:(0.63) < lift:(2.54)> lev:(0.09) [168] conv:(2.01)
+ 241. PCT_hisp='(-inf-0.118039]' 453 ==> PCT_FREE_MEAL='(-inf-0.20415]' PCT_More_than_INCOME_60000='(0.708078-inf)' 187    conf:(0.41) < lift:(2.54)> lev:(0.06) [113] conv:(1.42)
+ 242. PCT_FREE_MEAL='(-inf-0.20415]' PCT_More_than_INCOME_60000='(0.708078-inf)' 295 ==> PCT_hisp='(-inf-0.118039]' 187    conf:(0.63) < lift:(2.54)> lev:(0.06) [113] conv:(2.03)
+ 243. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 366 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 236    conf:(0.64) < lift:(2.53)> lev:(0.08) [142] conv:(2.08)
+ 244. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 236    conf:(0.51) < lift:(2.53)> lev:(0.08) [142] conv:(1.63)
+ 245. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 182    conf:(0.4) < lift:(2.53)> lev:(0.06) [110] conv:(1.4)
+ 246. PCT_More_than_INCOME_60000='(-inf-0.40602]' EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 286 ==> PCT_Single_Family='(0.352997-inf)' 182    conf:(0.64) < lift:(2.53)> lev:(0.06) [110] conv:(2.04)
+ 247. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 293    conf:(0.64) < lift:(2.53)> lev:(0.1) [177] conv:(2.08)
+ 248. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_Single_Family='(0.352997-inf)' 293    conf:(0.64) < lift:(2.53)> lev:(0.1) [177] conv:(2.04)
+ 249. PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 350 ==> PCT_Single_Family='(0.352997-inf)' 222    conf:(0.63) < lift:(2.53)> lev:(0.07) [134] conv:(2.03)
+ 250. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 222    conf:(0.49) < lift:(2.53)> lev:(0.07) [134] conv:(1.57)
+ 251. PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 293 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 182    conf:(0.62) < lift:(2.49)> lev:(0.06) [108] conv:(1.96)
+ 252. EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 452 ==> PCT_Single_Family='(0.352997-inf)' PCT_More_than_INCOME_60000='(-inf-0.40602]' 182    conf:(0.4) < lift:(2.49)> lev:(0.06) [108] conv:(1.4)
+ 253. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 286    conf:(0.62) < lift:(2.49)> lev:(0.09) [171] conv:(1.97)
+ 254. EDU_Population35to44years_Bachelorsdegreeorhigher='(-inf-0.1905]' 452 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 286    conf:(0.63) < lift:(2.49)> lev:(0.09) [171] conv:(2.02)
+ 255. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 380 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 239    conf:(0.63) < lift:(2.47)> lev:(0.08) [142] conv:(2)
+ 256. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 239    conf:(0.52) < lift:(2.47)> lev:(0.08) [142] conv:(1.63)
+ 257. PCT_hisp='(0.118039-0.217836]' 453 ==> PCT_White='(0.669973-0.802504]' 279    conf:(0.62) < lift:(2.46)> lev:(0.09) [165] conv:(1.94)
+ 258. PCT_White='(0.669973-0.802504]' 453 ==> PCT_hisp='(0.118039-0.217836]' 279    conf:(0.62) < lift:(2.46)> lev:(0.09) [165] conv:(1.94)
+ 259. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 380 ==> PCT_Single_Family='(0.352997-inf)' 235    conf:(0.62) < lift:(2.46)> lev:(0.08) [139] conv:(1.95)
+ 260. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 235    conf:(0.52) < lift:(2.46)> lev:(0.08) [139] conv:(1.63)
+ 261. PCT_FREE_MEAL='(-inf-0.20415]' 452 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 268    conf:(0.59) < lift:(2.43)> lev:(0.09) [157] conv:(1.85)
+ 262. EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 443 ==> PCT_FREE_MEAL='(-inf-0.20415]' 268    conf:(0.6) < lift:(2.43)> lev:(0.09) [157] conv:(1.89)
+ 263. PCT_hisp='(-inf-0.118039]' 453 ==> PCT_FREE_MEAL='(-inf-0.20415]' 273    conf:(0.6) < lift:(2.42)> lev:(0.09) [160] conv:(1.88)
+ 264. PCT_FREE_MEAL='(-inf-0.20415]' 452 ==> PCT_hisp='(-inf-0.118039]' 273    conf:(0.6) < lift:(2.42)> lev:(0.09) [160] conv:(1.88)
+ 265. PCT_White='(-inf-0.383592]' 454 ==> PCT_Single_Family='(0.352997-inf)' 273    conf:(0.6) < lift:(2.39)> lev:(0.09) [158] conv:(1.87)
+ 266. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_White='(-inf-0.383592]' 273    conf:(0.6) < lift:(2.39)> lev:(0.09) [158] conv:(1.86)
+ 267. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 272    conf:(0.6) < lift:(2.36)> lev:(0.09) [156] conv:(1.86)
+ 268. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_FREE_MEAL='(0.6535-inf)' 272    conf:(0.59) < lift:(2.36)> lev:(0.09) [156] conv:(1.82)
+ 269. PCT_White='(-inf-0.383592]' 454 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 270    conf:(0.59) < lift:(2.34)> lev:(0.09) [154] conv:(1.83)
+ 270. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_White='(-inf-0.383592]' 270    conf:(0.59) < lift:(2.34)> lev:(0.09) [154] conv:(1.8)
+ 271. School_Grade='(-inf-5.5]' 437 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 182    conf:(0.42) < lift:(2.3)> lev:(0.06) [102] conv:(1.4)
+ 272. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 328 ==> School_Grade='(-inf-5.5]' 182    conf:(0.55) < lift:(2.3)> lev:(0.06) [102] conv:(1.69)
+ 273. School_Grade='(-inf-5.5]' 437 ==> PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 194    conf:(0.44) < lift:(2.3)> lev:(0.06) [109] conv:(1.45)
+ 274. PCT_hisp='(0.458226-inf)' PCT_FREE_MEAL='(0.6535-inf)' 350 ==> School_Grade='(-inf-5.5]' 194    conf:(0.55) < lift:(2.3)> lev:(0.06) [109] conv:(1.69)
+ 275. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> PCT_Single_Family='(0.352997-inf)' 260    conf:(0.57) < lift:(2.29)> lev:(0.08) [146] conv:(1.75)
+ 276. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_FREE_MEAL='(0.6535-inf)' 260    conf:(0.57) < lift:(2.29)> lev:(0.08) [146] conv:(1.74)
+ 277. PCT_hisp='(0.458226-inf)' 453 ==> PCT_More_than_INCOME_60000='(-inf-0.40602]' 262    conf:(0.58) < lift:(2.27)> lev:(0.08) [146] conv:(1.76)
+ 278. PCT_More_than_INCOME_60000='(-inf-0.40602]' 461 ==> PCT_hisp='(0.458226-inf)' 262    conf:(0.57) < lift:(2.27)> lev:(0.08) [146] conv:(1.73)
+ 279. PCT_Single_Family='(-inf-0.170762]' 446 ==> PCT_More_than_INCOME_60000='(0.708078-inf)' 249    conf:(0.56) < lift:(2.26)> lev:(0.08) [138] conv:(1.7)
+ 280. PCT_More_than_INCOME_60000='(0.708078-inf)' 447 ==> PCT_Single_Family='(-inf-0.170762]' 249    conf:(0.56) < lift:(2.26)> lev:(0.08) [138] conv:(1.69)
+ 281. School_Grade='(-inf-5.5]' 437 ==> PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 202    conf:(0.46) < lift:(2.2)> lev:(0.06) [110] conv:(1.46)
+ 282. PCT_hisp='(0.458226-inf)' PCT_White='(-inf-0.383592]' 380 ==> School_Grade='(-inf-5.5]' 202    conf:(0.53) < lift:(2.2)> lev:(0.06) [110] conv:(1.61)
+ 283. School_Grade='(-inf-5.5]' 437 ==> PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 194    conf:(0.44) < lift:(2.2)> lev:(0.06) [105] conv:(1.43)
+ 284. PCT_White='(-inf-0.383592]' PCT_FREE_MEAL='(0.6535-inf)' 366 ==> School_Grade='(-inf-5.5]' 194    conf:(0.53) < lift:(2.2)> lev:(0.06) [105] conv:(1.61)
+ 285. PCT_hisp='(0.458226-inf)' 453 ==> PCT_Single_Family='(0.352997-inf)' 246    conf:(0.54) < lift:(2.16)> lev:(0.07) [132] conv:(1.63)
+ 286. PCT_Single_Family='(0.352997-inf)' 455 ==> PCT_hisp='(0.458226-inf)' 246    conf:(0.54) < lift:(2.16)> lev:(0.07) [132] conv:(1.63)
+ 287. PCT_hisp='(-inf-0.118039]' PCT_White='(0.802504-inf)' 355 ==> PCT_FREE_MEAL='(-inf-0.20415]' 187    conf:(0.53) < lift:(2.11)> lev:(0.05) [98] conv:(1.58)
+ 288. PCT_FREE_MEAL='(-inf-0.20415]' 452 ==> PCT_hisp='(-inf-0.118039]' PCT_White='(0.802504-inf)' 187    conf:(0.41) < lift:(2.11)> lev:(0.05) [98] conv:(1.37)
+ 289. School_Grade='(-inf-5.5]' 437 ==> PCT_White='(-inf-0.383592]' 228    conf:(0.52) < lift:(2.08)> lev:(0.07) [118] conv:(1.56)
+ 290. PCT_White='(-inf-0.383592]' 454 ==> School_Grade='(-inf-5.5]' 228    conf:(0.5) < lift:(2.08)> lev:(0.07) [118] conv:(1.52)
+ 291. PCT_Asian='(-inf-0.004892]' 453 ==> PCT_Black='(-inf-0.004035]' PCT_PI='(-inf-0.000242]' 182    conf:(0.4) < lift:(2.07)> lev:(0.05) [94] conv:(1.34)
+ 292. PCT_Black='(-inf-0.004035]' PCT_PI='(-inf-0.000242]' 351 ==> PCT_Asian='(-inf-0.004892]' 182    conf:(0.52) < lift:(2.07)> lev:(0.05) [94] conv:(1.55)
+ 293. PCT_Single_Family='(-inf-0.170762]' 446 ==> EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 223    conf:(0.5) < lift:(2.05)> lev:(0.06) [113] conv:(1.5)
+ 294. EDU_Population35to44years_Bachelorsdegreeorhigher='(0.515-inf)' 443 ==> PCT_Single_Family='(-inf-0.170762]' 223    conf:(0.5) < lift:(2.05)> lev:(0.06) [113] conv:(1.51)
+ 295. PCT_Black='(-inf-0.004035]' 453 ==> PCT_Asian='(-inf-0.004892]' PCT_PI='(-inf-0.000242]' 182    conf:(0.4) < lift:(2.04)> lev:(0.05) [93] conv:(1.34)
+ 296. PCT_Asian='(-inf-0.004892]' PCT_PI='(-inf-0.000242]' 356 ==> PCT_Black='(-inf-0.004035]' 182    conf:(0.51) < lift:(2.04)> lev:(0.05) [93] conv:(1.53)
+ 297. School_Grade='(-inf-5.5]' 437 ==> PCT_hisp='(0.458226-inf)' 223    conf:(0.51) < lift:(2.04)> lev:(0.06) [113] conv:(1.52)
+ 298. PCT_hisp='(0.458226-inf)' 453 ==> School_Grade='(-inf-5.5]' 223    conf:(0.49) < lift:(2.04)> lev:(0.06) [113] conv:(1.49)
+ 299. School_Grade='(-inf-5.5]' 437 ==> PCT_FREE_MEAL='(0.6535-inf)' 222    conf:(0.51) < lift:(2.03)> lev:(0.06) [112] conv:(1.52)
+ 300. PCT_FREE_MEAL='(0.6535-inf)' 453 ==> School_Grade='(-inf-5.5]' 222    conf:(0.49) < lift:(2.03)> lev:(0.06) [112] conv:(1.48)
+ 301. PCT_FREE_MEAL='(-inf-0.20415]' 452 ==> PCT_Single_Family='(-inf-0.170762]' 225    conf:(0.5) < lift:(2.02)> lev:(0.06) [113] conv:(1.49)
+ 302. PCT_Single_Family='(-inf-0.170762]' 446 ==> PCT_FREE_MEAL='(-inf-0.20415]' 225    conf:(0.5) < lift:(2.02)> lev:(0.06) [113] conv:(1.51)
+
