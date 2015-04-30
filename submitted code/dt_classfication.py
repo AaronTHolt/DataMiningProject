@@ -8,9 +8,13 @@ from sklearn.metrics import accuracy_score
 
 import csv
 import random
+import timeit
 
+from sklearn.externals.six import StringIO 
+import pydot
 
 if __name__ == "__main__":
+    start = timeit.default_timer()
     reader1 = csv.reader(open("2011.csv"))
     reader2 = csv.reader(open("2012.csv"))
     reader1.next()
@@ -91,3 +95,13 @@ if __name__ == "__main__":
     print(" Number of Training Objects: %d" % len(x_train_only_ext_feature))
     print(" Number of Test Objects: %d" % len(x_test_only_ext_feature))
     print(" Accuracy: %f" % accuracy_score(y_test, predictions))    
+    stop = timeit.default_timer()
+    print("\n3. DT Total Running Time")
+    print("----------------------------------------------------")
+    print(" %f seconds" % float(stop - start)) 
+    
+    #Writing the tree structure
+    #dot_data = StringIO() 
+    #tree.export_graphviz(clf, out_file=dot_data) 
+    #graph = pydot.graph_from_dot_data(dot_data.getvalue()) 
+    #graph.write_pdf("tree.pdf") 

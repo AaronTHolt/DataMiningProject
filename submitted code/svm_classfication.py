@@ -9,9 +9,11 @@ from sklearn import svm
 
 import csv
 import random
+import timeit
 
 
 if __name__ == "__main__":
+    start = timeit.default_timer()
     reader1 = csv.reader(open("2011.csv"))
     reader2 = csv.reader(open("2012.csv"))
     reader1.next()
@@ -92,4 +94,8 @@ if __name__ == "__main__":
     print(" Number of Test Objects: %d" % len(x_test_only_ext_feature))
     print(" Accuracy: %f" % accuracy_score(y_test, predictions))    
     
+    stop = timeit.default_timer()
+    print("\n3. SVM Total Running Time")
+    print("----------------------------------------------------")
+    print(" %f seconds" % float(stop - start)) 
     
